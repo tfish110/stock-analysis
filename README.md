@@ -11,6 +11,7 @@ Steve wishes to help his parents with their investments by examining a selection
 For this analysis, we used two different methods of VBA scripting to get the same results. In both methods, the code for building the structure and formatting for the results table remained the same. However, the methodology for drawing information from the raw data into our table was different. In our first coding methodology, the modules from the class materials walked us through using nested for loops to identify which lines of data belonged to each stock ticker(outer loop). We then calculated the total daily volume and annual return for each stock (inner loop):
 
 '''
+
     For i = 0 To 11
     
         ticker = tickers(i)
