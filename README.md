@@ -47,7 +47,7 @@ For this challenge, we were tasked with refactoring this original code into a mo
 
 '''
 
-Dim tickerIndex As Integer
+    Dim tickerIndex As Integer
     tickerIndex = 0
 
     Dim tickerVolumes(12) As Long
