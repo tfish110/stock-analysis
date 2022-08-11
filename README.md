@@ -87,3 +87,33 @@ For this challenge, we were tasked with refactoring this original code into a mo
 
 '''
 
+### Tables of results
+
+For 2017, only one of the selected stocks returned a loss in value, TERP. But, it seems that 2018 must have been a rough year for the green energy sector, as that trend nearly reversed and only two of the selected stocks return a gain in value, ENPH and RUN. The way that this information might influence Steve and his parents' choices for diversifying their investments would depend largely on their investment strategies and risk tolerence. All we can say for sure is that ENPH is the only stock that returned gains for both years, and TERP is the only stock that returned losses for both years. The main advantage that we gain in this analysis is the ease with which we can quickly get a sense for the directionality and magnitude of the stocks' changes in value each year. The tables for both years are displayed here:
+
+![Table_2017](https://github.com/tfish110/stock-analysis/blob/main/Resources/Table_2017.png)
+
+![Table_2018](https://github.com/tfish110/stock-analysis/blob/main/Resources/Table_2018.png)
+
+### Execution times
+
+By using the 'Timer' function in VBA, we were able to see how long it took for each of our scripts to run and fill in the tables discussed above. We then used the 'MsgBox' function to display the time it took to run the code after it completed. For the original code, these were the resulting times that were displayed for each year:
+
+![Original_2017_Time](https://github.com/tfish110/stock-analysis/blob/main/Resources/Original_Code_2017.png)
+
+![Original_2018_Time](https://github.com/tfish110/stock-analysis/blob/main/Resources/Original_Code_2018.png)
+
+We included this same functionality for timing the code when we refactored the original code. These new, faster times can be seen here:
+
+![Refactored_2017_Time](https://github.com/tfish110/stock-analysis/blob/main/Resources/VBA_Challenge_2017.png)
+
+![Refactored_2018_Time](https://github.com/tfish110/stock-analysis/blob/main/Resources/VBA_Challenge_2018.png)
+
+## Summary
+### What are the advantages or disadvantages of refactoring code?
+
+Refactoring code can have some clear benefits when it comes to improving the efficiency and speed that it takes to run a script. However, there are some pitfalls which could make the process more of a burden than a benefit. If you end up making mistakes, you may break code that was functioning perfectly fine before. There is also a possibility that your refactored solution might simply be a different way of running a script, without actually making any efficiency improvements at all. You may also end up impacting the readability of the code in either direction; different approaches to refactoring could be either a benefit or a hindrance in that respect, especially if there are multiple people working on the code who need to work together as a team.
+
+### How do these pros and cons apply to refactoring the original VBA script?
+
+In this case, there was a clear advantage in the speed and efficiency of the refactored script. While both scripts ran in less than a second, the refactored script was still about 8 times faster than the original. With this volume of data, that difference wouldn't make much of an impact, but it is a good demonstration of how much of an impact more efficient code can have when working with larger datasets. As for the pitfalls, I must admit that I did run into a few when refactoring my code. I knew that it would be useful to copy and paste some code from the original script to make some minor changes for the new version. However, I ended up getting confused at times, and needed to backtrack to undo some changes. Even when I thought that I had gotten to the end of the script successfully the first time, it turned out I had made some mistakes and my code would not run. I tried debugging, which resulted in making the problems worse it seemed, and so I ended up cutting it all out and starting over again from the beginning. This was frustrating, but it was a good learning opportunity. By going through each step a second time, I had a better understanding of what I needed to do along the way because of the mistakes that I made the first time.
